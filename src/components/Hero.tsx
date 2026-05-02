@@ -16,7 +16,7 @@ export default function Hero() {
         <div>
           <div className="hero-1 flex items-center gap-3 mb-8">
             <span className="gold-line" />
-            <span className="section-label">Юридична фірма · Київ</span>
+            <span className="section-label">Юридична фірма · Одеса</span>
           </div>
 
           <h1 className="hero-2 font-serif text-5xl lg:text-6xl xl:text-7xl leading-[1.05] text-[var(--ink)] mb-6">

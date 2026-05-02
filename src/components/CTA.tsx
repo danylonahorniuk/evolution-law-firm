@@ -65,7 +65,7 @@ export default function CTA() {
 
         <div className="border-t border-white/10 pt-10 grid sm:grid-cols-3 gap-8 text-center">
           {[
-            { icon: "📍", label: "Адреса", val: "м. Київ, вул. Хрещатик, 12" },
+            { icon: "📍", label: "Адреса", val: "м. Одеса, вул. Дерибасівська, 12" },
             { icon: "📞", label: "Телефон", val: "+38 (000) 000-00-00" },
             { icon: "✉️", label: "Email", val: "info@elf-law.ua" },
           ].map((c) => (
