@@ -13,7 +13,7 @@ const playfair = Playfair_Display({
 });
 
 export const metadata: Metadata = {
-  title: "ELF — Evolution Law Firm | Реалізуй своє право",
+  title: "ELF — Evolution Law Firm",
   description:
     "Юридична фірма Evolution Law Firm — досвідчені адвокати у сферах корпоративного права, судових спорів та податкового консультування.",
 };
