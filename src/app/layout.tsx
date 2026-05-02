@@ -26,6 +26,14 @@ export const metadata: Metadata = {
     siteName: "Evolution Law Firm",
     locale: "uk_UA",
     type: "website",
+    images: [
+      {
+        url: "https://evolution-law-firm-eight.vercel.app/opengraph-image",
+        width: 1200,
+        height: 630,
+        alt: "ELF — Evolution Law Firm",
+      },
+    ],
   },
   twitter: {
     card: "summary_large_image",
