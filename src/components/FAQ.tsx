@@ -88,14 +88,20 @@ export default function FAQ() {
                 </span>
               </button>
 
-              {open === i && (
+              <div
+                style={{
+                  maxHeight: open === i ? "300px" : "0px",
+                  overflow: "hidden",
+                  transition: "max-height 0.4s cubic-bezier(0.4,0,0.2,1)",
+                }}
+              >
                 <div className="px-7 pb-6">
                   <div className="w-8 h-px bg-[var(--gold)] mb-4" />
                   <p className="text-[var(--ink-mid)] text-sm leading-relaxed">
                     {faq.a}
                   </p>
                 </div>
-              )}
+              </div>
             </div>
             </Animate>
           ))}
