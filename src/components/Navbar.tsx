@@ -56,8 +56,8 @@ export default function Navbar() {
   return (
     <header className="fixed top-0 left-0 right-0 z-50 bg-white border-b border-[var(--border)] shadow-sm">
       <div className="max-w-7xl mx-auto px-6 lg:px-10 flex items-center justify-between h-20">
-        <Link href="/" className="flex items-center gap-3">
-          <div className="relative w-10 h-10 overflow-hidden rounded-full">
+        <Link href="/" className="flex items-center gap-4 group">
+          <div className="relative w-14 h-14 overflow-hidden rounded-full ring-2 ring-[var(--gold)] ring-offset-2 ring-offset-white flex-shrink-0 transition-transform duration-200 group-hover:scale-105">
             <Image
               src="/logo-circle.webp"
               alt="ELF Logo"
@@ -66,11 +66,14 @@ export default function Navbar() {
             />
           </div>
           <div className="leading-tight">
-            <div className="text-[11px] tracking-[0.22em] uppercase font-semibold text-[var(--gold)]">
+            <div className="text-[10px] tracking-[0.25em] uppercase font-semibold text-[var(--gold)]">
               Evolution
             </div>
-            <div className="text-[13px] tracking-[0.12em] uppercase font-bold text-[var(--ink)]">
+            <div className="text-[14px] tracking-[0.15em] uppercase font-bold text-[var(--ink)]">
               Law Firm
+            </div>
+            <div className="text-[8px] tracking-[0.2em] uppercase text-[var(--ink-light)] mt-0.5">
+              Реалізуй своє право
             </div>
           </div>
         </Link>

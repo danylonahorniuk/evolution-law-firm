@@ -9,15 +9,15 @@ export default function Footer() {
       <div className="max-w-7xl mx-auto px-6 lg:px-10 py-16">
         <div className="grid lg:grid-cols-4 gap-12 pb-12 border-b border-white/10">
           <div className="lg:col-span-2">
-            <div className="flex items-center gap-3 mb-6">
-              <div className="relative w-10 h-10 overflow-hidden rounded-full">
+            <div className="flex items-center gap-4 mb-6">
+              <div className="relative w-14 h-14 overflow-hidden rounded-full ring-2 ring-[var(--gold)] ring-offset-2 ring-offset-[var(--ink)] flex-shrink-0">
                 <Image src="/logo-circle.webp" alt="ELF" fill className="object-cover" />
               </div>
               <div>
-                <div className="text-[10px] tracking-[0.22em] uppercase font-semibold text-[var(--gold)]">
+                <div className="text-[10px] tracking-[0.25em] uppercase font-semibold text-[var(--gold)]">
                   Evolution
                 </div>
-                <div className="text-[12px] tracking-[0.12em] uppercase font-bold text-white">
+                <div className="text-[14px] tracking-[0.15em] uppercase font-bold text-white">
                   Law Firm
                 </div>
               </div>
