@@ -16,6 +16,10 @@ export const metadata: Metadata = {
   title: "ELF — Evolution Law Firm",
   description:
     "Юридична фірма Evolution Law Firm — досвідчені адвокати у сферах корпоративного права, судових спорів та податкового консультування.",
+  icons: {
+    icon: "/logo-circle.webp",
+    apple: "/logo-circle.webp",
+  },
 };
 
 export default function RootLayout({
