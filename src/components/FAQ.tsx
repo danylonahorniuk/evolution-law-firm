@@ -34,7 +34,7 @@ export default function FAQ() {
   const [open, setOpen] = useState<number | null>(0);
 
   return (
-    <section id="faq" className="py-28 bg-[var(--cream)]">
+    <section id="faq" className="py-28 bg-[var(--cream-warm)]">
       <div className="max-w-4xl mx-auto px-6 lg:px-10">
         <Animate className="text-center mb-16">
           <div className="flex items-center justify-center gap-3 mb-5">

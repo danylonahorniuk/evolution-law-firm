@@ -42,7 +42,7 @@ const services = [
 
 export default function Services() {
   return (
-    <section id="services" className="py-28 bg-[var(--cream)]">
+    <section id="services" className="py-28 bg-[var(--cream-warm)]">
       <div className="max-w-7xl mx-auto px-6 lg:px-10">
         <Animate className="flex flex-col lg:flex-row lg:items-end justify-between mb-16 gap-6">
           <div>
