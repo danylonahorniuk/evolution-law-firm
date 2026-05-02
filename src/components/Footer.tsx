@@ -11,7 +11,7 @@ export default function Footer() {
           <div className="lg:col-span-2">
             <div className="flex items-center gap-4 mb-6">
               <div className="relative w-14 h-14 overflow-hidden rounded-full ring-2 ring-[var(--gold)] ring-offset-2 ring-offset-[var(--ink)] flex-shrink-0">
-                <Image src="/logo-circle.webp" alt="ELF" fill className="object-cover" />
+                <Image src="/logo-circle.webp" alt="ELF" fill sizes="56px" className="object-cover" />
               </div>
               <div>
                 <div className="text-[10px] tracking-[0.25em] uppercase font-semibold text-[var(--gold)]">

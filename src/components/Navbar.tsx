@@ -62,6 +62,8 @@ export default function Navbar() {
               src="/logo-circle.webp"
               alt="ELF Logo"
               fill
+              sizes="56px"
+              priority
               className="object-cover"
             />
           </div>

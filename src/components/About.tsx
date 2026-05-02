@@ -12,6 +12,7 @@ export default function About() {
                 src="https://images.unsplash.com/photo-1521791136064-7986c2920216?w=700&h=875&fit=crop&auto=format"
                 alt="Про ELF"
                 fill
+                sizes="(max-width: 1024px) 100vw, 50vw"
                 className="object-cover"
               />
             </div>

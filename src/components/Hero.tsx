@@ -86,6 +86,7 @@ export default function Hero() {
               src="https://images.unsplash.com/photo-1589829545856-d10d557cf95f?w=800&h=1000&fit=crop&auto=format"
               alt="Юридична фірма"
               fill
+              sizes="(max-width: 1024px) 0px, 50vw"
               className="object-cover"
               priority
             />
