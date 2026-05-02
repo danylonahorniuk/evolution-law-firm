@@ -20,6 +20,18 @@ export const metadata: Metadata = {
     icon: "/logo-circle.webp",
     apple: "/logo-circle.webp",
   },
+  openGraph: {
+    title: "ELF — Evolution Law Firm",
+    description: "Реалізуй своє право впевнено. Стратегічний підхід, чіткі результати.",
+    siteName: "Evolution Law Firm",
+    locale: "uk_UA",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "ELF — Evolution Law Firm",
+    description: "Реалізуй своє право впевнено. Стратегічний підхід, чіткі результати.",
+  },
 };
 
 export default function RootLayout({
