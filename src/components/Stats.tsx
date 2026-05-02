@@ -27,8 +27,8 @@ export default function Stats() {
         <div className="grid grid-cols-2 lg:grid-cols-4 gap-px bg-[var(--border)]">
           {stats.map((s, i) => (
             <Animate key={i} delay={i * 120}>
-              <div className="bg-white px-8 py-12 text-center group hover:bg-[var(--cream-warm)] transition-colors">
-                <div className="font-serif text-5xl lg:text-6xl font-bold text-[var(--gold)] mb-3 group-hover:scale-110 transition-transform origin-center inline-block">
+              <div className="bg-white px-4 py-8 lg:px-8 lg:py-12 text-center group hover:bg-[var(--cream-warm)] transition-colors">
+                <div className="font-serif text-4xl lg:text-6xl font-bold text-[var(--gold)] mb-3 group-hover:scale-110 transition-transform origin-center inline-block">
                   {s.num}
                 </div>
                 <div className="text-[11px] uppercase tracking-[0.18em] text-[var(--ink-light)]">

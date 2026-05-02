@@ -5,7 +5,7 @@ export default function Hero() {
   return (
     <section className="relative min-h-screen flex items-center bg-white pt-20 overflow-hidden">
       <div className="absolute inset-0 pointer-events-none">
-        <div className="absolute top-0 right-0 w-[55%] h-full bg-[var(--cream)]" />
+        <div className="absolute top-0 right-0 w-[55%] h-full bg-[var(--cream)] hidden lg:block" />
         <div
           className="absolute bottom-0 left-0 w-72 h-72 rounded-full opacity-5"
           style={{ background: "var(--gold)", filter: "blur(80px)" }}
