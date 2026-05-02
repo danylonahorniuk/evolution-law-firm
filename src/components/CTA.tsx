@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Animate from "./Animate";
 
 export default function CTA() {
   return (
@@ -16,7 +17,7 @@ export default function CTA() {
         <div className="absolute top-8 right-20 w-px h-24 bg-[var(--gold)] opacity-10" />
       </div>
 
-      <div className="relative max-w-4xl mx-auto px-6 lg:px-10 text-center">
+      <Animate className="relative max-w-4xl mx-auto px-6 lg:px-10 text-center">
         <div className="flex items-center justify-center gap-3 mb-8">
           <span className="gold-line" />
           <span className="section-label text-[var(--gold)]">Починаємо</span>
@@ -76,7 +77,7 @@ export default function CTA() {
             </div>
           ))}
         </div>
-      </div>
+      </Animate>
     </section>
   );
 }

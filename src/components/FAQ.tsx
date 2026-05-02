@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import Animate from "./Animate";
 
 const faqs = [
   {
@@ -35,7 +36,7 @@ export default function FAQ() {
   return (
     <section id="faq" className="py-28 bg-[var(--cream)]">
       <div className="max-w-4xl mx-auto px-6 lg:px-10">
-        <div className="text-center mb-16">
+        <Animate className="text-center mb-16">
           <div className="flex items-center justify-center gap-3 mb-5">
             <span className="gold-line" />
             <span className="section-label">FAQ</span>
@@ -47,10 +48,11 @@ export default function FAQ() {
           <p className="text-[var(--ink-mid)] mt-4 text-base">
             Не знайшли відповідь? Зателефонуйте або напишіть — відповімо протягом години.
           </p>
-        </div>
+        </Animate>
 
         <div className="space-y-2">
           {faqs.map((faq, i) => (
+            <Animate key={i} delay={i * 80}>
             <div
               key={i}
               className={`border transition-all duration-200 ${
@@ -95,9 +97,11 @@ export default function FAQ() {
                 </div>
               )}
             </div>
+            </Animate>
           ))}
         </div>
 
+        <Animate delay={faqs.length * 80}>
         <div className="mt-12 p-8 border border-[var(--gold)]/30 bg-white flex flex-col sm:flex-row items-center justify-between gap-6">
           <div>
             <div className="font-serif text-xl text-[var(--ink)] mb-1">
@@ -117,6 +121,7 @@ export default function FAQ() {
             </svg>
           </a>
         </div>
+        </Animate>
       </div>
     </section>
   );

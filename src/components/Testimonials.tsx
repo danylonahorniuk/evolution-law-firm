@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import Animate from "./Animate";
 
 const reviews = [
   {
@@ -39,7 +40,7 @@ export default function Testimonials() {
   return (
     <section id="reviews" className="py-28 bg-white">
       <div className="max-w-7xl mx-auto px-6 lg:px-10">
-        <div className="flex flex-col lg:flex-row lg:items-end justify-between mb-16 gap-6">
+        <Animate className="flex flex-col lg:flex-row lg:items-end justify-between mb-16 gap-6">
           <div>
             <div className="flex items-center gap-3 mb-5">
               <span className="gold-line" />
@@ -69,10 +70,11 @@ export default function Testimonials() {
               <div className="text-[10px] uppercase tracking-wider text-[var(--ink-light)] mt-1">Рекомендують нас</div>
             </div>
           </div>
-        </div>
+        </Animate>
 
         <div className="grid lg:grid-cols-2 gap-6">
           {reviews.map((r, i) => (
+            <Animate key={i} delay={i * 120}>
             <div
               key={i}
               onClick={() => setActive(i)}
@@ -115,6 +117,7 @@ export default function Testimonials() {
                 <div className="text-[11px] uppercase tracking-wider text-[var(--ink-light)] mt-0.5">{r.role}</div>
               </div>
             </div>
+            </Animate>
           ))}
         </div>
       </div>
