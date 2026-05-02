@@ -100,6 +100,7 @@ export default function Team() {
                   </span>
                 </div>
               </div>
+            </div>
             </Animate>
           ))}
         </div>
