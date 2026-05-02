@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Animate from "./Animate";
 
 const team = [
   {
@@ -28,7 +29,7 @@ export default function Team() {
   return (
     <section id="team" className="py-28 bg-white">
       <div className="max-w-7xl mx-auto px-6 lg:px-10">
-        <div className="flex flex-col lg:flex-row lg:items-end justify-between mb-16 gap-6">
+        <Animate className="flex flex-col lg:flex-row lg:items-end justify-between mb-16 gap-6">
           <div>
             <div className="flex items-center gap-3 mb-5">
               <span className="gold-line" />
@@ -42,11 +43,12 @@ export default function Team() {
             Наша команда — практикуючі юристи з глибокою спеціалізацією та
             доведеними результатами.
           </p>
-        </div>
+        </Animate>
 
         <div className="grid md:grid-cols-3 gap-8">
           {team.map((member, i) => (
-            <div key={i} className="group">
+            <Animate key={i} delay={i * 160}>
+            <div className="group">
               <div className="relative aspect-[3/4] overflow-hidden mb-5">
                 {/* Фото — завжди кольорове */}
                 <Image
@@ -98,7 +100,7 @@ export default function Team() {
                   </span>
                 </div>
               </div>
-            </div>
+            </Animate>
           ))}
         </div>
       </div>

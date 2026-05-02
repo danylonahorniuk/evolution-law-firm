@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Animate from "./Animate";
 
 const services = [
   {
@@ -43,7 +44,7 @@ export default function Services() {
   return (
     <section id="services" className="py-28 bg-[var(--cream)]">
       <div className="max-w-7xl mx-auto px-6 lg:px-10">
-        <div className="flex flex-col lg:flex-row lg:items-end justify-between mb-16 gap-6">
+        <Animate className="flex flex-col lg:flex-row lg:items-end justify-between mb-16 gap-6">
           <div>
             <div className="flex items-center gap-3 mb-5">
               <span className="gold-line" />
@@ -62,47 +63,32 @@ export default function Services() {
               <path d="M1 7h12M7 1l6 6-6 6" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
             </svg>
           </Link>
-        </div>
+        </Animate>
 
         <div className="grid md:grid-cols-3 gap-6">
           {services.map((s, i) => (
-            <div
-              key={i}
-              className="bg-white p-8 group hover:shadow-lg transition-all duration-300 border border-transparent hover:border-[var(--gold)] relative overflow-hidden"
-            >
-              <div className="absolute top-0 left-0 w-0 h-0.5 bg-[var(--gold)] group-hover:w-full transition-all duration-500" />
-
-              <div className="text-[var(--gold)] mb-6">{s.icon}</div>
-
-              <h3 className="font-serif text-xl text-[var(--ink)] mb-4">
-                {s.title}
-              </h3>
-              <p className="text-[var(--ink-mid)] text-sm leading-relaxed mb-6">
-                {s.desc}
-              </p>
-
-              <ul className="space-y-2 mb-8">
-                {s.items.map((item) => (
-                  <li
-                    key={item}
-                    className="flex items-center gap-2 text-[12px] text-[var(--ink-mid)] uppercase tracking-wide"
-                  >
-                    <span className="w-4 h-px bg-[var(--gold)] flex-shrink-0" />
-                    {item}
-                  </li>
-                ))}
-              </ul>
-
-              <Link
-                href="#contact"
-                className="text-[11px] tracking-widest uppercase font-semibold text-[var(--gold)] flex items-center gap-2 group-hover:gap-3 transition-all"
-              >
-                Детальніше
-                <svg width="12" height="12" viewBox="0 0 14 14" fill="none">
-                  <path d="M1 7h12M7 1l6 6-6 6" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
-                </svg>
-              </Link>
-            </div>
+            <Animate key={i} delay={i * 150}>
+              <div className="bg-white p-8 group hover:shadow-lg transition-all duration-300 border border-transparent hover:border-[var(--gold)] relative overflow-hidden h-full">
+                <div className="absolute top-0 left-0 w-0 h-0.5 bg-[var(--gold)] group-hover:w-full transition-all duration-500" />
+                <div className="text-[var(--gold)] mb-6">{s.icon}</div>
+                <h3 className="font-serif text-xl text-[var(--ink)] mb-4">{s.title}</h3>
+                <p className="text-[var(--ink-mid)] text-sm leading-relaxed mb-6">{s.desc}</p>
+                <ul className="space-y-2 mb-8">
+                  {s.items.map((item) => (
+                    <li key={item} className="flex items-center gap-2 text-[12px] text-[var(--ink-mid)] uppercase tracking-wide">
+                      <span className="w-4 h-px bg-[var(--gold)] flex-shrink-0" />
+                      {item}
+                    </li>
+                  ))}
+                </ul>
+                <Link href="#contact" className="text-[11px] tracking-widest uppercase font-semibold text-[var(--gold)] flex items-center gap-2 group-hover:gap-3 transition-all">
+                  Детальніше
+                  <svg width="12" height="12" viewBox="0 0 14 14" fill="none">
+                    <path d="M1 7h12M7 1l6 6-6 6" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+                  </svg>
+                </Link>
+              </div>
+            </Animate>
           ))}
         </div>
       </div>

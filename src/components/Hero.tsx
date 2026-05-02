@@ -14,12 +14,12 @@ export default function Hero() {
 
       <div className="relative max-w-7xl mx-auto px-6 lg:px-10 w-full grid lg:grid-cols-2 gap-16 items-center py-20">
         <div>
-          <div className="flex items-center gap-3 mb-8">
+          <div className="hero-1 flex items-center gap-3 mb-8">
             <span className="gold-line" />
             <span className="section-label">Юридична фірма · Київ</span>
           </div>
 
-          <h1 className="font-serif text-5xl lg:text-6xl xl:text-7xl leading-[1.05] text-[var(--ink)] mb-6">
+          <h1 className="hero-2 font-serif text-5xl lg:text-6xl xl:text-7xl leading-[1.05] text-[var(--ink)] mb-6">
             Реалізуй{" "}
             <span className="relative inline-block">
               <span className="text-[var(--gold)]">своє</span>
@@ -32,13 +32,13 @@ export default function Hero() {
             </span>
           </h1>
 
-          <p className="text-[var(--ink-mid)] text-lg leading-relaxed max-w-md mb-10">
+          <p className="hero-3 text-[var(--ink-mid)] text-lg leading-relaxed max-w-md mb-10">
             ELF — команда юристів, яка захищає ваші інтереси з першої
             консультації до фінального рішення. Стратегічний підхід, чіткі
             результати.
           </p>
 
-          <div className="flex flex-wrap gap-4 mb-14">
+          <div className="hero-3 flex flex-wrap gap-4 mb-14">
             <Link
               href="#contact"
               className="inline-flex items-center gap-2 bg-[var(--gold)] hover:bg-[var(--gold-dark)] text-white px-8 py-4 text-[12px] tracking-widest uppercase font-semibold transition-colors"
@@ -62,7 +62,7 @@ export default function Hero() {
             </Link>
           </div>
 
-          <div className="flex gap-10 pt-8 border-t border-[var(--border)]">
+          <div className="hero-4 flex gap-10 pt-8 border-t border-[var(--border)]">
             {[
               { num: "10+", label: "Років досвіду" },
               { num: "300+", label: "Виграних справ" },
@@ -80,7 +80,7 @@ export default function Hero() {
           </div>
         </div>
 
-        <div className="relative hidden lg:block">
+        <div className="hero-img relative hidden lg:block">
           <div className="relative aspect-[4/5] w-full max-w-lg ml-auto overflow-hidden">
             <Image
               src="https://images.unsplash.com/photo-1589829545856-d10d557cf95f?w=800&h=1000&fit=crop&auto=format"

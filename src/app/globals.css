@@ -59,6 +59,8 @@ body {
   to { opacity: 1; transform: translateY(0); }
 }
 
-.animate-fadeUp {
-  animation: fadeUp 0.7s ease forwards;
-}
+.hero-1 { animation: fadeUp 0.7s cubic-bezier(0.4,0,0.2,1) 0.1s both; }
+.hero-2 { animation: fadeUp 0.7s cubic-bezier(0.4,0,0.2,1) 0.3s both; }
+.hero-3 { animation: fadeUp 0.7s cubic-bezier(0.4,0,0.2,1) 0.5s both; }
+.hero-4 { animation: fadeUp 0.7s cubic-bezier(0.4,0,0.2,1) 0.7s both; }
+.hero-img { animation: fadeUp 0.9s cubic-bezier(0.4,0,0.2,1) 0.2s both; }
