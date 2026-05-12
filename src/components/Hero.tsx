@@ -3,7 +3,7 @@ import Image from "next/image";
 
 export default function Hero() {
   return (
-    <section className="relative min-h-screen flex items-center bg-white pt-20 overflow-hidden">
+    <section id="hero" className="relative min-h-screen flex items-center bg-white pt-20 overflow-hidden">
       <div className="absolute inset-0 pointer-events-none">
         <div className="absolute top-0 right-0 w-[55%] h-full bg-[var(--cream)] hidden lg:block" />
         <div

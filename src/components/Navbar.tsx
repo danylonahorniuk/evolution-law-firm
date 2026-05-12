@@ -56,7 +56,7 @@ export default function Navbar() {
   return (
     <header className="fixed top-0 left-0 right-0 z-50 bg-white border-b border-[var(--border)] shadow-sm">
       <div className="max-w-7xl mx-auto px-6 lg:px-10 flex items-center justify-between h-20">
-        <Link href="/" className="flex items-center gap-4 group">
+        <Link href="#hero" className="flex items-center gap-4 group">
           <div className="relative w-14 h-14 overflow-hidden rounded-full ring-2 ring-[var(--gold)] ring-offset-2 ring-offset-white flex-shrink-0 transition-transform duration-200 group-hover:scale-105">
             <Image
               src="/logo-meridian.webp"
