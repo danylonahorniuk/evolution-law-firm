@@ -22,7 +22,7 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: "Meridian Law",
-    description: "Реалізуй своє право впевнено. Стратегічний підхід, чіткі результати.",
+    description: "Ваш захист — наша місія. Стратегічний підхід, чіткі результати.",
     siteName: "Meridian Law",
     locale: "uk_UA",
     type: "website",
@@ -38,7 +38,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "Meridian Law",
-    description: "Реалізуй своє право впевнено. Стратегічний підхід, чіткі результати.",
+    description: "Ваш захист — наша місія. Стратегічний підхід, чіткі результати.",
   },
 };
 

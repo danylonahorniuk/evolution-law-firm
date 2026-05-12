@@ -23,7 +23,7 @@ export default function Footer() {
               </div>
             </div>
             <p className="text-white/40 text-sm leading-relaxed max-w-xs mb-6">
-              Реалізуй своє право — юридична фірма, якій довіряють понад 500
+              Ваш захист — наша місія. Юридична фірма, якій довіряють понад 500
               клієнтів по всій Україні.
             </p>
             <div className="flex gap-3">

@@ -16,19 +16,19 @@ export default function Hero() {
         <div>
           <div className="hero-1 flex items-center gap-3 mb-8">
             <span className="gold-line" />
-            <span className="section-label">Юридична фірма · Одеса</span>
+            <span className="section-label">Юридична фірма · Київ</span>
           </div>
 
           <h1 className="hero-2 font-serif text-5xl lg:text-6xl xl:text-7xl leading-[1.05] text-[var(--ink)] mb-6">
-            Реалізуй{" "}
-            <span className="relative inline-block">
-              <span className="text-[var(--gold)]">своє</span>
-            </span>
+            Ваш захист —{" "}
             <br />
-            право
+            <span className="relative inline-block">
+              <span className="text-[var(--gold)]">наша</span>
+            </span>
+            {" "}місія.
             <br />
             <span className="text-[var(--ink-mid)] text-4xl lg:text-5xl xl:text-6xl">
-              впевнено.
+              стратегічно.
             </span>
           </h1>
 
