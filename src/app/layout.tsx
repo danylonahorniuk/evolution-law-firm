@@ -17,8 +17,8 @@ export const metadata: Metadata = {
   description:
     "Юридична фірма Meridian Law — досвідчені адвокати у сферах корпоративного права, судових спорів та податкового консультування.",
   icons: {
-    icon: "/logo-circle.webp",
-    apple: "/logo-circle.webp",
+    icon: "/logo-meridian.webp",
+    apple: "/logo-meridian.webp",
   },
   openGraph: {
     title: "Meridian Law",
