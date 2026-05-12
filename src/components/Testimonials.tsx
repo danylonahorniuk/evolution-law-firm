@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import Image from "next/image";
 import Animate from "./Animate";
 
 const reviews = [
@@ -10,6 +11,7 @@ const reviews = [
     text: "Meridian Law супроводжували нашу компанію під час складного злиття з іноземним партнером. Команда відпрацювала бездоганно — чітко, швидко, без жодних сюрпризів. Результат перевершив очікування.",
     rating: 5,
     tag: "Корпоративне право",
+    avatar: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=80&h=80&fit=crop&crop=face&auto=format",
   },
   {
     name: "Олена Романенко",
@@ -17,6 +19,7 @@ const reviews = [
     text: "Зверталась у справі трудового спору з колишнім роботодавцем. Навіть не вірила, що можна виграти — але юристи Meridian Law довели протилежне. Дуже вдячна за підтримку та професіоналізм.",
     rating: 5,
     tag: "Судові спори",
+    avatar: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=80&h=80&fit=crop&crop=face&auto=format",
   },
   {
     name: "Микола Коваль",
@@ -24,6 +27,7 @@ const reviews = [
     text: "Допомогли оптимізувати податкове навантаження та правильно оформити документацію для ТЦУ. Взаємодіяти з командою — суцільне задоволення: завжди на зв'язку, пояснюють людською мовою.",
     rating: 5,
     tag: "Податкове право",
+    avatar: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=80&h=80&fit=crop&crop=face&auto=format",
   },
   {
     name: "Тетяна Шевченко",
@@ -31,6 +35,7 @@ const reviews = [
     text: "Шукала юриста для оформлення договорів з іноземними клієнтами. Meridian Law зробили все швидко та якісно, ще й попередили про можливі ризики, про які я навіть не думала. Рекомендую!",
     rating: 5,
     tag: "Корпоративне право",
+    avatar: "https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=80&h=80&fit=crop&crop=face&auto=format",
   },
 ];
 
@@ -76,7 +81,6 @@ export default function Testimonials() {
           {reviews.map((r, i) => (
             <Animate key={i} delay={i * 120}>
             <div
-              key={i}
               onClick={() => setActive(i)}
               onMouseEnter={() => setActive(i)}
               className={`p-8 cursor-pointer transition-all duration-200 border ${
@@ -112,9 +116,20 @@ export default function Testimonials() {
                 {r.text}
               </p>
 
-              <div>
-                <div className="font-semibold text-[var(--ink)] text-sm">{r.name}</div>
-                <div className="text-[11px] uppercase tracking-wider text-[var(--ink-light)] mt-0.5">{r.role}</div>
+              <div className="flex items-center gap-3">
+                <div className="relative w-11 h-11 rounded-full overflow-hidden ring-2 ring-[var(--gold)]/30 flex-shrink-0">
+                  <Image
+                    src={r.avatar}
+                    alt={r.name}
+                    fill
+                    sizes="44px"
+                    className="object-cover"
+                  />
+                </div>
+                <div>
+                  <div className="font-semibold text-[var(--ink)] text-sm">{r.name}</div>
+                  <div className="text-[11px] uppercase tracking-wider text-[var(--ink-light)] mt-0.5">{r.role}</div>
+                </div>
               </div>
             </div>
             </Animate>
