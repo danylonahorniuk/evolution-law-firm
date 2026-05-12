@@ -32,7 +32,7 @@ export default function CTA() {
 
         <p className="text-white/60 text-lg leading-relaxed max-w-xl mx-auto mb-12">
           Зверніться до нас сьогодні для отримання безкоштовної первинної
-          консультації від досвідчених юристів Evolution Law Firm.
+          консультації від досвідчених юристів Meridian Law.
         </p>
 
         <div className="flex flex-wrap gap-4 justify-center mb-16">
@@ -52,7 +52,7 @@ export default function CTA() {
             Зателефонувати
           </a>
           <a
-            href="mailto:info@elf-law.ua"
+            href="mailto:info@meridian-law.ua"
             className="inline-flex items-center gap-3 border border-white/30 hover:border-[var(--gold)] text-white hover:text-[var(--gold)] px-8 py-4 text-[12px] tracking-widest uppercase font-semibold transition-all"
           >
             <svg width="16" height="16" viewBox="0 0 24 24" fill="none">
@@ -67,7 +67,7 @@ export default function CTA() {
           {[
             { icon: "📍", label: "Адреса", val: "м. Одеса, вул. Дерибасівська, 12" },
             { icon: "📞", label: "Телефон", val: "+38 (000) 000-00-00" },
-            { icon: "✉️", label: "Email", val: "info@elf-law.ua" },
+            { icon: "✉️", label: "Email", val: "info@meridian-law.ua" },
           ].map((c) => (
             <div key={c.label}>
               <div className="text-[11px] uppercase tracking-widest text-[var(--gold)] mb-2">

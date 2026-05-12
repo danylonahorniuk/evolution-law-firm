@@ -11,14 +11,14 @@ export default function Footer() {
           <div className="lg:col-span-2">
             <div className="flex items-center gap-4 mb-6">
               <div className="relative w-14 h-14 overflow-hidden rounded-full ring-2 ring-[var(--gold)] ring-offset-2 ring-offset-[var(--ink)] flex-shrink-0">
-                <Image src="/logo-circle.webp" alt="ELF" fill sizes="56px" className="object-cover" />
+                <Image src="/logo-meridian.webp" alt="Meridian Law" fill sizes="56px" className="object-cover" />
               </div>
               <div>
                 <div className="text-[10px] tracking-[0.25em] uppercase font-semibold text-[var(--gold)]">
-                  Evolution
+                  Meridian
                 </div>
                 <div className="text-[14px] tracking-[0.15em] uppercase font-bold text-white">
-                  Law Firm
+                  Law
                 </div>
               </div>
             </div>
@@ -88,10 +88,10 @@ export default function Footer() {
 
         <div className="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4">
           <div className="text-white/25 text-[11px] tracking-wide uppercase">
-            © {year} Evolution Law Firm. Всі права захищені.
+            © {year} Meridian Law. Всі права захищені.
           </div>
           <div className="text-white/25 text-[11px] tracking-wide uppercase">
-            ELF · Реалізуй своє право
+            Meridian Law · Legal Excellence
           </div>
         </div>
       </div>

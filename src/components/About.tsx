@@ -10,7 +10,7 @@ export default function About() {
             <div className="relative aspect-[4/5] overflow-hidden">
               <Image
                 src="https://images.unsplash.com/photo-1521791136064-7986c2920216?w=700&h=875&fit=crop&auto=format"
-                alt="Про ELF"
+                alt="Про Meridian Law"
                 fill
                 sizes="(max-width: 1024px) 100vw, 50vw"
                 className="object-cover"
@@ -35,7 +35,7 @@ export default function About() {
               <span className="text-[var(--gold)]">дає результат</span>
             </h2>
             <p className="text-[var(--ink-mid)] leading-relaxed mb-6 text-base">
-              Evolution Law Firm — це команда юристів, яка поєднує глибоку
+              Meridian Law — це команда юристів, яка поєднує глибоку
               правову експертизу з індивідуальним підходом до кожного клієнта.
               Ми не просто захищаємо ваші інтереси — ми стаємо вашим надійним
               партнером у найскладніших правових ситуаціях.

@@ -1,7 +1,7 @@
 import { ImageResponse } from "next/og";
 
 export const runtime = "edge";
-export const alt = "ELF — Evolution Law Firm";
+export const alt = "Meridian Law";
 export const size = { width: 1200, height: 630 };
 export const contentType = "image/png";
 
@@ -103,9 +103,9 @@ export default function OGImage() {
                 letterSpacing: "-0.02em",
               }}
             >
-              Evolution
+              Meridian
               <br />
-              <span style={{ color: "#C9A84C" }}>Law Firm</span>
+              <span style={{ color: "#C9A84C" }}>Law</span>
             </div>
             <div
               style={{
@@ -154,7 +154,7 @@ export default function OGImage() {
                 alignItems: "center",
               }}
             >
-              <span style={{ fontSize: 28, fontWeight: 700, color: "#fff" }}>ELF</span>
+              <span style={{ fontSize: 22, fontWeight: 700, color: "#fff" }}>ML</span>
               <span style={{ fontSize: 10, color: "rgba(255,255,255,0.8)", letterSpacing: "0.2em" }}>
                 SINCE 2014
               </span>

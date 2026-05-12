@@ -33,7 +33,7 @@ export default function Hero() {
           </h1>
 
           <p className="hero-3 text-[var(--ink-mid)] text-lg leading-relaxed max-w-md mb-10">
-            ELF — команда юристів, яка захищає ваші інтереси з першої
+            Meridian Law — команда юристів, яка захищає ваші інтереси з першої
             консультації до фінального рішення. Стратегічний підхід, чіткі
             результати.
           </p>
@@ -103,7 +103,7 @@ export default function Hero() {
           </div>
 
           <div className="absolute top-8 -left-4 bg-[var(--gold)] text-white p-4 text-center">
-            <div className="font-serif text-xl font-bold">ELF</div>
+            <div className="font-serif text-xl font-bold">ML</div>
             <div className="text-[9px] tracking-[0.2em] uppercase mt-0.5">
               Since 2014
             </div>

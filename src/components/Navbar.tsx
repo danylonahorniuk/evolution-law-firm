@@ -59,8 +59,8 @@ export default function Navbar() {
         <Link href="/" className="flex items-center gap-4 group">
           <div className="relative w-14 h-14 overflow-hidden rounded-full ring-2 ring-[var(--gold)] ring-offset-2 ring-offset-white flex-shrink-0 transition-transform duration-200 group-hover:scale-105">
             <Image
-              src="/logo-circle.webp"
-              alt="ELF Logo"
+              src="/logo-meridian.webp"
+              alt="Meridian Law Logo"
               fill
               sizes="56px"
               priority
@@ -69,13 +69,13 @@ export default function Navbar() {
           </div>
           <div className="leading-tight">
             <div className="text-[10px] tracking-[0.25em] uppercase font-semibold text-[var(--gold)]">
-              Evolution
+              Meridian
             </div>
             <div className="text-[14px] tracking-[0.15em] uppercase font-bold text-[var(--ink)]">
-              Law Firm
+              Law
             </div>
             <div className="text-[8px] tracking-[0.2em] uppercase text-[var(--ink-light)] mt-0.5">
-              Реалізуй своє право
+              Legal Excellence
             </div>
           </div>
         </Link>
