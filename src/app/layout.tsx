@@ -28,7 +28,7 @@ export const metadata: Metadata = {
     type: "website",
     images: [
       {
-        url: "https://evolution-law-firm-eight.vercel.app/og-image.png",
+        url: "https://meridian-law-firm.vercel.app/og-image.png",
         width: 1200,
         height: 630,
         alt: "Meridian Law",
